@@ -67,7 +67,7 @@ function App() {
   
       async function fetchPlayers() {
         const fetchedPlayers = [];
-        for (let i = 0; i < 2; i++) { // define quantos jogadores serao colocados na lista.
+        for (let i = 0; i < 5; i++) { // define quantos jogadores serao colocados na lista.
           const randomTeamId = teamIds[Math.floor(Math.random() * teamIds.length)];
           try {
             const response = await axios({
