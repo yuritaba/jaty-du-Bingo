@@ -19,6 +19,8 @@ function App() {
     '113': 'Napoli', '46': 'Inter', '583': 'PSG', '244': 'Marseille',
     '1041': 'Lyon', '162': 'Monaco', '16': 'Borussia Dortmund', '27': 'Bayern Munich'
   };
+  const seleIds = ['3439', '3377', '3299', '3437', '3300', '3816', '3449', '3376', '3556'];
+  const seleNames = {'3439': 'Brasil', '3377': 'França', '3299': 'Inglaterra', '3437': 'Argentina', '3300': 'Portugal', '3816': 'Colombia', '3449': 'Uruguai', '3376': 'Italia', '3556': 'Croacia'};
 
   // Definição da função sleep
   function sleep(ms) {
