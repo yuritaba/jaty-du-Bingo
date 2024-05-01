@@ -40,10 +40,10 @@ h1 {
 
 /* Estilos para os botões dos times */
 .team-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Cria um grid 4x4 */
   gap: 10px;
+  background-color: #007BFF; /* Fundo azul */
 }
 
 button {
@@ -57,6 +57,16 @@ button {
   flex-direction: column;
   align-items: center;
 }
+
+button.incorrect {
+  animation: flashRed 2s;
+}
+
+@keyframes flashRed {
+  0% { background-color: #ffcccc; }
+  100% { background-color: #f0f0f0; }
+}
+
 
 button img {
   width: 30px;
