@@ -1,90 +1,72 @@
-/* Estilos gerais para a aplicação */
 .App {
-  text-align: center;
-  font-family: 'Arial', sans-serif;
-  max-width: 800px;
-  margin: auto;
-}
-
-h1 {
-  color: #333;
-  margin: 20px 0;
-}
-
-/* Estilos para os itens da lista de jogadores */
-.player-item {
-  list-style: none;
-  padding: 20px;
-  margin: 10px 0;
-  border: 2px solid #ddd;
-  border-radius: 8px;
+  background-image: linear-gradient(to right, #004d00 12.5%, #008000 12.5%, #008000 25%, #004d00 25%, #004d00 37.5%, #008000 37.5%, #008000 50%, #004d00 50%, #004d00 62.5%, #008000 62.5%, #008000 75%, #004d00 75%, #004d00 87.5%, #008000 87.5%);
+  color: white;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f9f9f9;
+  justify-content: center;
+}
+
+body {
+  font-family: 'Bebas Neue', sans-serif;
 }
 
 .player-info {
-  margin-bottom: 10px;
+  text-align: center;
 }
 
 .player-info img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Circular */
+  border: 3px solid white; /* Contorno branco */
 }
 
-.player-info h3 {
-  margin: 10px 0;
-}
-
-/* Estilos para os botões dos times */
 .team-buttons {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Cria um grid 4x4 */
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
-  background-color: #007BFF; /* Fundo azul */
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px; /* Raio no quadrado quadriculado */
+  background-color: #442d7b; /* Leve transparência */
 }
 
 button {
-  padding: 10px;
+  background-color: #442d7b; /* Verde escuro */
   border: none;
-  border-radius: 5px;
-  background-color: #f0f0f0;
-  cursor: pointer;
+  color: white;
+  padding: 10px;
+  width: 70px; /* Tamanho fixo */
+  height: 70px; /* Tamanho fixo */
+  border-radius: 5px; /* Raio leve */
   transition: background-color 0.3s;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+
+button:hover {
+  background-color: rgb(101, 72, 169); /* Verde claro neon */
+}
+
+button.correct {
+  background-color: #00ff00; /* Verde claro neon */
 }
 
 button.incorrect {
-  animation: flashRed 2s;
-}
-
-@keyframes flashRed {
-  0% { background-color: #ffcccc; }
-  100% { background-color: #f0f0f0; }
-}
-
-
-button img {
-  width: 30px;
-  height: 30px;
+  background-color: #ff0000; /* Vermelho forte */
 }
 
 button:disabled {
+  opacity: 0.6;
   cursor: default;
-  opacity: 0.7;
 }
 
-/* Cores para respostas corretas e incorretas */
-.correct {
-  background-color: #ccffcc; /* verde claro */
-  border-color: #00cc00; /* verde */
-}
-
-.incorrect {
-  background-color: #ffcccc; /* vermelho claro */
-  border-color: #cc0000; /* vermelho */
+.loading {
+  color: white;
+  font-size: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(to right, #004d00 12.5%, #008000 12.5%, #008000 25%, #004d00 25%, #004d00 37.5%, #008000 37.5%, #008000 50%, #004d00 50%, #004d00 62.5%, #008000 62.5%, #008000 75%, #004d00 75%, #004d00 87.5%, #008000 87.5%);
 }
